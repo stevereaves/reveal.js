@@ -31,8 +31,8 @@ $heading4Size: 1.00em;
 $codeFont: monospace;
 
 // Links and actions
-$linkColor: #13DAEC;
-$linkColorHover: lighten( $linkColor, 20% );
+$linkColor: #000;
+$linkColorHover: #42affa; //*lighten( $linkColor, 20% );*//
 
 // Text selection
 $selectionBackgroundColor: #FF5E99;
