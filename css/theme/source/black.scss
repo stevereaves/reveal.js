@@ -29,10 +29,7 @@ $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
 $headingFontWeight: 600;
 $linkColor: #42affa;
-$linkColorHover: lighten( $linkColor, 15% );
-$linkColorHover:transition-duration: .2s;
-$linkColorHover:padding-bottom:0.33%;
-$linkColorHover:border-bottom: 2px solid #040329;
+$linkColorHover: border-bottom: 2px solid #040329;
 
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 $heading1Size: 2.5em;
