@@ -257,7 +257,7 @@
  *********************************************/
 
 .reveal a {
-	color: #2b2b2b; //*$linkColor;*//
+	color: $linkColor;
 	text-decoration: none;
 	transition: color .15s ease;
 }
