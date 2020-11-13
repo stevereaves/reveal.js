@@ -49,38 +49,23 @@
 				
 				<section> <!-- Modul Test Page -->
 					
-					<!-- Trigger the Modal -->
+					<!-- Trigger the Modal --
 					<img id="myImg" src="https://1051741.app.netsuite.com/c.1051741/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Cullum.MinimallyInvasive.387px (5).png" alt="BioXclude" style="width:100%;max-width:300px">
 
-					<!-- The Modal -->
+					<!-- The Modal --
 					<div id="myModal" class="modal">
 
-  					<!-- The Close Button -->
+  					<!-- The Close Button --
   					<span class="close">&times;</span>
 
-  					<!-- Modal Content (The Image) -->
+  					<!-- Modal Content (The Image) --
   					<img class="modal-content" id="img01">
 
-  					<!-- Modal Caption (Image Text) -->
+  					<!-- Modal Caption (Image Text) --
   					<div id="caption"></div>
-					</div>
+					</div>-->
 					
-					
-					<!-- Trigger the Modal -->
-					<img id="myImg" src="https://1051741.app.netsuite.com/c.1051741/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Cullum.MinimallyInvasive.387px (6).png" alt="BioXclude" style="width:100%;max-width:300px">
-
-					<!-- The Modal -->
-					<div id="myModal" class="modal">
-
-  					<!-- The Close Button -->
-  					<span class="close">&times;</span>
-
-  					<!-- Modal Content (The Image) -->
-  					<img class="modal-content" id="img02">
-
-  					<!-- Modal Caption (Image Text) -->
-  					<div id="caption"></div>
-					</div>					
+					<a class="image-link" href="https://1051741.app.netsuite.com/c.1051741/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Cullum.MinimallyInvasive.387px (5).png"><img src="https://1051741.app.netsuite.com/c.1051741/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Cullum.MinimallyInvasive.387px (5).png"></a>				
 					
 					
 					
@@ -11981,26 +11966,9 @@ Reveal.on( 'customevent', function() {
 
 		<!-- Modal Images Script -->
 		<script>
-			// Get the modal
-			var modal = document.getElementById("myModal");
-
-			// Get the image and insert it inside the modal - use its "alt" text as a caption
-			var img = document.getElementById("myImg");
-			var modalImg = document.getElementById("img01,img02");
-			var captionText = document.getElementById("caption");
-			img.onclick = function(){
-  				modal.style.display = "block";
-  				modalImg.src = this.src;
-  				captionText.innerHTML = this.alt;
-			}
-
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() {
-  				modal.style.display = "none";
-			}
+			$(document).ready(function() {
+  			$('.image-link').magnificPopup({type:'image'});
+			});
 		</script>
 
 
