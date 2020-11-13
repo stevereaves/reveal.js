@@ -54,7 +54,21 @@
 					<a class="image-link" href="https://1051741.app.netsuite.com/c.1051741/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Cullum.MinimallyInvasive.387px (5).png"><img src="https://1051741.app.netsuite.com/c.1051741/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Cullum.MinimallyInvasive.387px (5).png"></a>				
 					
 					
+					</br></br>
 					
+					
+					<div id="popup-background" class="popup-background" style="display: none;">
+    						<div class="popup-content">
+        						<div id="popup-title"></div>
+        						<img id="popup-image" class="popup-image">
+   						</div>
+					</div>					
+					
+					
+					<img class="image-popup" src="images/image1.jpg" alt="Image example 1.">
+					<img class="image-popup" src="images/image2.jpg" alt="Image example 2.">
+					<img class="image-popup" src="images/image3.jpg" alt="Image example 3.">	
+			
 				</section>
 				
 				
@@ -11963,6 +11977,27 @@ Reveal.on( 'customevent', function() {
 		</script>
 
 
+
+
+		<script>
+			let thumbnails = document.querySelectorAll(".image-popup");
+
+			let popupBackground = document.querySelector("#popup-background");
+			let popupTitle = document.querySelector("#popup-title");
+			let popupImage = document.querySelector("#popup-image");
+
+			thumbnails.forEach(thumbnail => {
+    				thumbnail.addEventListener("click", function(){
+       					 popupBackground.style.display = "block";
+        				popupTitle.innerHTML = this.alt;
+        				popupImage.src = this.src;
+    				})
+			});
+
+			popupBackground.addEventListener("click", function(){
+    				popupBackground.style.display = "none";
+			})
+		</script>
 
 
 	</body>
