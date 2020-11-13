@@ -12,7 +12,11 @@
 		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+		<!-- lightbox popup images -->
+		<link href="dist/css/lightgallery.css" rel="stylesheet">
+		
+		
+		
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 	</head>
@@ -49,37 +53,36 @@
 				
 				<section> <!-- Pop-Up Images Test Page -->
 					
-				<div id="work" class="container content-section text-center">
-    <div class="container">
-        <div class="row">
-            <div class="gallery horizontal-gallery"> 
-                <img class="work-modals" src="http://lorempixel.com/200/200/nature/3">
-                <img class="work-modals" src="http://lorempixel.com/200/200/nature/1">
-                <img class="work-modals" src="http://lorempixel.com/200/200/nature/2">
-            </div>
-        </div>
-    </div>
-    <!-- Work Modal -->
-    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">&times;</span>  <span class="sr-only"></span>
-
-                    </button>
-                     <h4 class="modal-title" id="myModalLabel">ToDoList</h4>
-
-                </div>
-                <div class="modal-body">
-                    <img src="" id="imagepreview">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>				
+				<ul id="lightgallery" class="list-unstyled row">
+  <li data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" 
+      data-src="img/1-1600.jpg" 
+      ata-sub-html="<h4>Image Description</p>" 
+      data-pinterest-text="Pin it1" 
+      data-tweet-text="share on twitter 1">
+      <a href="">
+        <img class="img-responsive" src="img/thumb-1.jpg">
+      </a>
+  </li>
+  <li data-responsive="img/2-375.jpg 375, img/2-480.jpg 480, img/2.jpg 800" 
+      data-src="img/2-1600.jpg" 
+      ata-sub-html="<h4>Image Description</p>" 
+      data-pinterest-text="Pin it1" 
+      data-tweet-text="share on twitter 2">
+      <a href="">
+        <img class="img-responsive" src="img/thumb-2.jpg">
+      </a>
+  </li>
+  <li data-responsive="img/3-375.jpg 375, img/3-480.jpg 480, img/3.jpg 800" 
+      data-src="img/3-1600.jpg" 
+      ata-sub-html="<h4>Image Description</p>" 
+      data-pinterest-text="Pin it1" 
+      data-tweet-text="share on twitter 3">
+      <a href="">
+        <img class="img-responsive" src="img/thumb-3.jpg">
+      </a>
+  </li>
+</ul>					
+					
 					
 				</section>
 				
@@ -11975,14 +11978,30 @@ Reveal.on( 'customevent', function() {
 			});
 		</script>
 		
-		<script>
+
+
 	
-			$(".work-modals").on("click", function () {
-    			$('#imagepreview').attr('src', $(this).attr('src'));
-    			$('#modal1').modal('show');
-			});
+			<!-- Core -->
+<script src="js/lightgallery.js"></script>
+<!-- Autoplay -->
+<script src="js/lg-autoplay.js"></script>
+<!-- Fullscreen -->
+<script src="js/lg-fullscreen.js"></script>
+<!-- Hashtag -->
+<script src="js/lg-hash.js"></script>
+<!-- Pager -->
+<script src="js/lg-pager.js"></script>
+<!-- Social share -->
+<script src="js/lg-share.js"></script>
+<!-- Thumbnail -->
+<script src="js/lg-thumbnail.js"></script>
+<!-- HTML5/YOUTUBE/VIMEO Video -->
+<script src="js/lg-video.js"></script>
+<!-- Zoom -->
+<script src="js/lg-zoom.js"></script>
+<!-- Rotate -->
+<script src="js/lg-rotate.js"></script>			
 			
-		</script>
 
 
 
