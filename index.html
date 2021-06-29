@@ -3650,8 +3650,8 @@ Special Instructions </div>
 						
                 				<div class="row"  >
                   					<div class="column33">
-                    						<div onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-									<img src="https://www.snoasismedical.com/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Holtzclaw.NoBoneLoss.1.png"  style="width:100%" >						
+                    						<div >
+									<img src="https://www.snoasismedical.com/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Holtzclaw.NoBoneLoss.1.png"  style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">						
 									<div class="imagenumber" style="font-size:9px;color:#fff;padding-right:15px;margin-top:-53px">1. Tooth #3</div>
                     						</div>
                   					</div>
@@ -15957,44 +15957,7 @@ font-family: 'Montserrat', sans-serif;
 /* Begin Applications Slideshow with Thumbnails */
 
 
-<script>
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
 
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
 
 	
 	
