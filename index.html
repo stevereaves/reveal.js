@@ -134,15 +134,7 @@
 				
 				<section> <!-- Pop-Up Images Test Page 2 -->
 					
-					
-        						<!--<img class="sliderthumb" src="https://1051741.app.netsuite.com/c.1051741/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Cullum.MinimallyInvasive.387px (1).png">
-        						<img class="sliderbig" src="https://snoasismedical.com/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Cullum.1.png" style="">-->
-    					
-
-
-					
-					
-
+		
 					
 <h2 style="text-align:center">Testing Popups</h2>
 
@@ -165,22 +157,22 @@
   <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
 
-    <div class="mySlides">
+    <div class="mySlides2">
       <div class="numbertext" style="margin-bottom: 5px" >1 / 4</div>
       <img src="https://www.snoasismedical.com/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Holtzclaw.NoBoneLoss.1.png" style="width:100%;padding-top:5px;">
     </div>
 
-    <div class="mySlides">
+    <div class="mySlides2">
       <div class="numbertext" style="margin-bottom: 5px">2 / 4</div>
       <img src="https://www.snoasismedical.com/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Holtzclaw.NoBoneLoss.2.png" style="width:100%;padding-top:5px;">
     </div>
 
-    <div class="mySlides">
+    <div class="mySlides2">
 	    <div class="numbertext" style="margin-bottom: 5px">3 / 4</div>
       <img src="https://www.snoasismedical.com/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Holtzclaw.NoBoneLoss.3.png" style="width:100%;padding-top:5px;">
     </div>
     
-    <div class="mySlides">
+    <div class="mySlides2">
       <div class="numbertext" style="margin-bottom: 5px">4 / 4</div>
       <img src="https://www.snoasismedical.com/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Holtzclaw.NoBoneLoss.4.png" style="width:100%;padding-top:5px;">
     </div>
@@ -15188,26 +15180,15 @@ Reveal.on( 'customevent', function() {
 
 
 <script>
+	
+/* Lightbox 1 */	
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
 
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
-}
-
-	
-
-function openModal() {
-  document.getElementById("myModal2").style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById("myModal2").style.display = "none";
-}
-	
-	
-	
+}	
 	
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -15237,12 +15218,54 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+
 </script>			
 
 
 
+<script>
+	
+/* Lightbox 1 */	
+function openModal() {
+  document.getElementById("myModal2").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal2").style.display = "none";
+}	
+	
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
 
 
+</script>
 
 
 
