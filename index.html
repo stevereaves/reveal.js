@@ -53,7 +53,27 @@
         						<!--<img class="sliderthumb" src="https://1051741.app.netsuite.com/c.1051741/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Cullum.MinimallyInvasive.387px (1).png">
         						<img class="sliderbig" src="https://snoasismedical.com/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Cullum.1.png" style="">-->
     					
+<div class="gallerycontainer">
 
+<a class="thumbnail" href="#thumb"><img src="https://www.snoasismedical.com/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Holtzclaw.NoBoneLoss.1.png" width="100px" height="66px" border="0" /><span><img src="https://www.snoasismedical.com/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Holtzclaw.NoBoneLoss.1.png" /><br />Simply beautiful.</span></a>
+
+<a class="thumbnail" href="#thumb"><img src="https://www.snoasismedical.com/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Holtzclaw.NoBoneLoss.2.png" width="100px" height="66px" border="0" /><span><img src="https://www.snoasismedical.com/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Holtzclaw.NoBoneLoss.2.png" /><br />So real, it's unreal. Or is it?</span></a>
+
+<br />
+
+<a class="thumbnail" href="#thumb"><img src="media/sushi2_thumb.jpg" width="100px" height="75px" border="0" /><span><img src="media/sushi2.jpg" /><br />Sushi for dinner anyone?</span></a> 
+
+<a class="thumbnail" href="#thumb"><img src="media/horses_thumb.jpg" width="100px" height="70px" border="0" /><span><img src="media/horses.jpg" /><br />Run wild with horses.</span></a>
+
+<br />
+
+<a class="thumbnail" href="#thumb">Dynamic Drive<span><img src="media/dynamicdrive.gif" /><br />Dynamic Drive</span></a>
+
+<br />
+
+<a class="thumbnail" href="#thumb">Zoka Coffee<span><img src="media/zoka.gif" /><br />Zoka Coffee</span></a>
+
+</div>
 	
 					
 				</section>
@@ -15064,7 +15084,6 @@ Reveal.on( 'customevent', function() {
 }
 
 							   
-8ba3d4
 
 							   
 .link {
@@ -15835,7 +15854,46 @@ font-family: 'Montserrat', sans-serif;
 	
 /* Begin Applications Slideshow with Thumbnails */
 
+.gallerycontainer{
+position: relative;
+/*Add a height attribute and set to largest image's height to prevent overlaying*/
+}
 
+.thumbnail img{
+border: 1px solid white;
+margin: 0 5px 5px 0;
+}
+
+.thumbnail:hover{
+background-color: transparent;
+}
+
+.thumbnail:hover img{
+border: 1px solid blue;
+}
+
+.thumbnail span{ /*CSS for enlarged image*/
+position: absolute;
+background-color: lightyellow;
+padding: 5px;
+left: -1000px;
+border: 1px dashed gray;
+visibility: hidden;
+color: black;
+text-decoration: none;
+}
+
+.thumbnail span img{ /*CSS for enlarged image*/
+border-width: 0;
+padding: 2px;
+}
+
+.thumbnail:hover span{ /*CSS for enlarged image*/
+visibility: visible;
+top: 0;
+left: 230px; /*position where enlarged image should offset horizontally */
+z-index: 50;
+}
 	
 	
 
