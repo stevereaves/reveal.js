@@ -50,7 +50,26 @@
 				<section> <!-- Pop-Up Images Test Page 1 -->
 					
 					
-        						<!--<img class="sliderthumb" src="https://1051741.app.netsuite.com/c.1051741/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Cullum.MinimallyInvasive.387px (1).png">
+        						
+					 <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img class="testimonials" style="border:1px solid #183672;" src="https://1051741.app.netsuite.com/core/media/media.nl?id=285358&c=1051741&h=u3f8fR6lgH2X2HxBeAxiCaM-hZ0jq2CeV44SZIEh8doO2Swc" alt="" >
+            </div>
+            <div class="flip-box-back">
+              <br>
+              <p class="clinadvisorflipbox"><b>Specialty:</b> Endodontics</br><b>Bio:</b><a class="grey" href="#" target="_blank"> View</a><br></p>
+              <!--Dr. Leopardi received his undergraduate dental degree from the University of Adelaide, South Australia, in 1984.  He enjoyed private practice as a general dentist in Adelaide, Australia, for several years prior to receiving his specialist training and masters degree in combined fixed, removable and implant Prosthodontics, at the University of North Carolina, at Chapel Hill, in 1993.</p>-->
+              <a href="#" target="_blank" class="fa fa-globe" style="font-size:25px;color:#0D93CF"></a>
+            </div>
+          </div>
+        </div>
+        <div class="subheading24" style="padding-top:2%">
+          Charles Solomon<br>DDS, MS
+         </div>
+        <div class="subheading25">   
+          New York, NY</div>					
+					<!--<img class="sliderthumb" src="https://1051741.app.netsuite.com/c.1051741/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Cullum.MinimallyInvasive.387px (1).png">
         						<img class="sliderbig" src="https://snoasismedical.com/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/img/Applications.Sockets.Cullum.1.png" style="">-->
     					
 
@@ -16001,10 +16020,58 @@ font-family: 'Montserrat', sans-serif;
 	
 	
 
-	
+/* BEGIN FLIP BOX */
 
-	
-	
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.flip-box {
+  background-color: #transparent;
+  width: 100%;
+  height: 200px;
+  border: px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #fff;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* END FLIP BOX */
 	
 	
 	
