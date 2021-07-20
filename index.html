@@ -16157,7 +16157,69 @@ font-family: 'Montserrat', sans-serif;
 /* End Applications Slideshow with Thumbnails */
 
 	
-	
+/* Begin Applications Grid */
+
+  .row-applications {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-applications {
+  flex: 25%;
+  max-width: %;
+  padding: .25%;
+  text-align:center;
+}
+
+.column-applications img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.column-applications1 {
+  flex: 50%;
+  max-width: %;
+  padding: .5%;
+  text-align:center;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column-applications {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column-applications {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column-applications1 {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column-applications1 {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+/*  End Applications Grid */
 	
 	
 	
